@@ -156,11 +156,20 @@
     @include responsive(800px) {
         transform: translateX(0);
         opacity: 0.3;
+
+    }
+    @include responsive(400px) {
+        top: 30%;
+        object-fit: revert;
     }
 }
 .content {
     position: relative;
     padding-top: 19.1rem;
+
+    @include responsive(400px) {
+        padding-top: 10.1rem;
+     }
 }
 
 .s-card-c6 {

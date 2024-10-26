@@ -1,0 +1,11 @@
+.gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: radial-gradient(50% 108% at 50% 0, #ecfbff 5%, #a8b8e6 35%, #b0b0d2 62%, transparent 100%);
+    background-color: #424252;
+}
+
+.text-light{
+    color: $white;
+}

@@ -6,6 +6,37 @@
     background-color: #424252;
 }
 
-.text-light{
+.gradient-text-purple {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    background-image: radial-gradient(50% 108% at 50% 0, #30d4ff 5%, #e6a8a8 35%, #2d2def 62%, transparent 100%);
+    background-color: #ab48bc;
+}
+
+.text-light {
     color: $white;
 }
+
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #6484ef 0%, #eb09f3  51%, #4568DC  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #2e2e2e;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 

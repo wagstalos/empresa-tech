@@ -20,7 +20,7 @@
             span {
                 font-weight: 500;
                 font-size: 1.3rem;
-                background-color: $brand-blue-light;
+                background-color: $white;
                 color: $brand-blue-dark;
                 width: 104px;
                 height: 26px;
@@ -162,7 +162,7 @@
     background-color: #0f0f2d;
     background-color: $white;
     background: rgb(0, 0, 0);
-    background: linear-gradient(129deg, rgba(0, 0, 0, 1) 66%, rgba(8, 50, 66, 1) 99%);
+    background: linear-gradient(129deg, rgba(0, 0, 0, 1) 66%, rgb(7 34 113) 99%);
 
     .container {
         display: flex;
@@ -264,8 +264,10 @@
 }
 
 .s-banco-c6 {
-    background: #fafafa;
+    background: #242424;
     padding-bottom: 13.4rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/40.jpg");
+    background-size: cover;
     .container {
         padding-top: 10.9rem;
         .top {
@@ -317,7 +319,7 @@
             border-radius: 1.5rem;
             display: flex;
             justify-content: space-between;
-            background: linear-gradient(14deg, rgb(0, 0, 0) 66%, rgb(8, 50, 66) 99%);
+            background: linear-gradient(14deg, rgb(0, 0, 0) 66%, rgb(9 42 140) 99%);
 
             .text-box-cel {
                 margin-top: 9.7rem;

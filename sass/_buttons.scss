@@ -12,10 +12,17 @@
 .btn-primary {
     background-color: $brand-green-light;
     font-weight: 500;
-    color: $brand-black;
+    color: $white;
     transition:
         background-color 0.3s ease-in,
         color 0.3s ease-in;
+    padding: 0.6rem 5rem;
+    display: inline-flex;
+
+    img {
+        margin-right: 8px;
+    }
+
     &:hover {
         background-color: $white;
     }

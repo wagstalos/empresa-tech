@@ -7,6 +7,10 @@ header {
     display: flex;
     // margin-top: 3.8rem;
     z-index: 2;
+
+    .menu-mobile {
+        display: none;
+    }
     .container {
         @include flex(row, center, space-between);
     }
@@ -42,6 +46,15 @@ header {
         }
     }
     @include responsive(800px) {
+        .menu-mobile {
+            display: block;
+            position: absolute;
+            right: 24px;
+            top: 27px;
+        }
+        .btn-secondary {
+            display: none;
+        }
         nav {
             ul {
                 display: none;

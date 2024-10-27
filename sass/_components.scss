@@ -26,17 +26,16 @@
     padding: 15px 45px;
     text-align: center;
 
-    transition: 0.5s;
+    // transition: all 0.5s ease;
     background-size: 200% auto;
     color: white;            
-    box-shadow: 0 0 20px #2e2e2e;
+    // box-shadow: 0 0 20px #2e2e2e;
     border-radius: 10px;
     display: block;
   }
 
   .btn-grad:hover {
     background-position: right center; /* change the direction of the change here */
-    color: #fff;
     text-decoration: none;
   }
  

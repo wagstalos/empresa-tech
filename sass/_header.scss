@@ -11,6 +11,30 @@ header {
     .menu-mobile {
         display: none;
     }
+    .links-mobile.show {
+        display: block; /* Exibe o menu quando a classe "show" é adicionada */
+    }
+
+    .links-mobile {
+        position: absolute;
+        background-color: #fff;
+        top: 70px;
+        padding: 16px;
+        right: 10px;
+        border-radius: 8px;
+        display: none;
+
+        ul {
+            li {
+                margin: 24px;
+            }
+            a {
+                color: $brand-black;
+                font-size: 16px;
+            }
+        }
+    }
+
     .container {
         @include flex(row, center, space-between);
     }

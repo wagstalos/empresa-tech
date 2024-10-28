@@ -30,7 +30,7 @@
 }
 
 .btn-grad {
-    background-image: linear-gradient(to right, #6484ef 0%, #eb09f3 51%, #4568dc 100%);
+    background-image: linear-gradient(to right, #6484ef 0%, #0a09f3 51%, #4568dc 100%);
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
@@ -85,10 +85,16 @@
         }
     }
 
-    .btn-primary {
-        display: table;
+    .btn-footer {
+        display: flex; /* Adicione esta linha */
         align-items: center;
         justify-content: center;
+        height: 50px;
+        margin: 40px auto 0; /* Centraliza horizontalmente e define margem superior */
+        border: 1px solid $white;
+        width:280px;
+        color: $white;
+        font-size: 1.6rem;
 
         margin: 0 auto;
 
@@ -114,11 +120,11 @@
         font-size: 30rem;
         color: white;
 
-        white-space: nowrap; /* Impede quebra de linha */
-        animation: marquee 10s linear infinite; /* Animação de deslocamento */
+        white-space: nowrap;
+        animation: marquee 10s linear infinite;
+        margin-bottom: -60px;
     }
 
-    /* Define a animação para o efeito marquee */
     @keyframes marquee {
         0% {
             transform: translateX(100%);
@@ -132,6 +138,7 @@
     @media (max-width: 768px) {
         h2 {
             font-size: 10rem; /* Ajusta o tamanho do texto para o mobile */
+            margin-bottom: -20px;
         }
     }
 }

@@ -1,0 +1,129 @@
+footer {
+    background-color: $white;
+    color: #c6c5ce;
+    border-top: 2px solid #ecf2fb;
+    padding-top: 8rem;
+    font-size: 2rem;
+    font-size: 1.4rem;
+    line-height: 165%;
+    background: radial-gradient(circle at 50% 72%, #000000 0, #1a1a1a 55%);
+    z-index: 1;
+    position: relative;
+
+    .footer_description {
+        max-width: 100%;
+    }
+
+    .d-flex {
+        justify-content: space-between;
+
+        h4 {
+            margin-bottom: $gutter * 3;
+            // color: $gray-300;
+        }
+
+        a {
+            color: $gray-200;
+            margin: $gutter 0;
+
+            &:hover {
+                color: $brand-main-light;
+            }
+        }
+
+        address {
+            a {
+                display: flex;
+                align-items: center;
+                margin-bottom: $gutter * 3;
+            }
+            span {
+                margin-right: $gutter * 2;
+            }
+        }
+
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin-right: $gutter;
+                    display: flex;
+                    align-items: center;
+                    color: $gray-200;
+                }
+            }
+        }
+    }
+
+    .credits {
+        border-top: 1px solid #272727;
+        padding: 3rem 0;
+        margin-top: $gutter * 8;
+        position: relative;
+        background: radial-gradient(circle at 50% 72%, #000000 0, #1a1a1a 55%);
+        background-color: #170027;
+
+        .btn-top {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $black;
+            border-radius: 80px;
+            width: 34px;
+            height: 34px;
+            border: 1px solid #3c3c3c;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            box-shadow: 2px 6px 10px 2px rgba(0, 0, 0, 0.2);
+            transition: all 0.2s ease-in;
+
+            svg {
+                transition: transform 0.3s ease;
+            }
+
+            &:hover {
+                border: 1px solid $green;
+                svg {
+                    transform: translateY(-3px);
+                }
+            }
+        }
+
+        .container {
+            @include flex(row, center, space-between);
+        }
+
+        .e-font-icon-svg {
+            width: 24px;
+            color: $brand-main;
+            margin-right: $gutter * 2;
+        }
+    }
+
+    @include responsive($mobile) {
+        .d-flex {
+            flex-direction: column;
+            h4 {
+                margin: ($gutter * 3) 0;
+            }
+        }
+        .wps-games {
+            margin-top: $gutter * 2;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @include responsive(500px) {
+        .credits {
+            z-index: 11;
+            background-color: $green;
+        }
+    }
+}

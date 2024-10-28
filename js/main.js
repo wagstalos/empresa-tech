@@ -12,41 +12,29 @@ $(document).ready(function () {
   });
 });
 
-// const canvas = document.getElementById("renderCanvas");
+function scrollTarget() {
+  var links = document.querySelectorAll('a[href^="#"]');
 
-// // Cria o motor Babylon
-// const engine = new BABYLON.Engine(canvas, true);
+  links.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
 
-// // Função para criar a cena
-// const createScene = () => {
-//     // Cria uma cena básica
-//     const scene = new BABYLON.Scene(engine);
+      var targetId = link.getAttribute("href").substring(1);
+      var target = document.getElementById(targetId);
 
-//     // Adiciona uma câmera de arco para movimentação fácil
-//     const camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 4, 4, BABYLON.Vector3.Zero(), scene);
-//     camera.attachControl(canvas, true);
+      if (target) {
+        var targetOffset = target.getBoundingClientRect().top + window.scrollY;
 
-//     // Adiciona uma luz hemisférica
-//     const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0), scene);
+        window.scrollTo({
+          top: targetOffset,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+}
 
-//     // Cria uma esfera
-//     const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", { diameter: 1 }, scene);
-
-//     return scene;
-// };
-
-// // Cria a cena
-// const scene = createScene();
-
-// // Loop de renderização
-// engine.runRenderLoop(() => {
-//     scene.render();
-// });
-
-// // Redimensiona a cena ao ajustar a janela
-// window.addEventListener("resize", () => {
-//     engine.resize();
-// });
+scrollTarget();
 
 const canvas = document.getElementById("renderCanvas");
 
@@ -79,7 +67,6 @@ const createScene = () => {
     scene
   );
 
-  // Carrega o modelo de borboleta
   BABYLON.SceneLoader.ImportMesh(
     "",
     "img/",

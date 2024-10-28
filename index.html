@@ -19,8 +19,8 @@
 </head>
 
 <body>
-  <!-- <canvas id="renderCanvas" style="width: 50vw; height: 70vh; position: absolute; right: 0; z-index: 20;"></canvas> -->
-  <header>
+
+  <header id="hero">
     <div class="container">
       <a href="#" class="logo">
         <img src="img/logo.png" width="250px" alt="Logo 6c" />
@@ -28,15 +28,15 @@
       <nav>
         <ul>
           <li>
-            <a href="">InovaTech Studio </a>
+            <a href="#home">InovaTech Studio </a>
 
           </li>
           <li>
-            <a href="">Soluções</a>
+            <a href="#solutions">Soluções</a>
 
           </li>
           <li>
-            <a href="">Sobre</a>
+            <a href="#about">Sobre</a>
 
           </li>
 
@@ -62,7 +62,7 @@
 
         </li>
         <li>
-          <a href="">Soluções</a>
+          <a href="#solutions">Soluções</a>
 
         </li>
         <li>
@@ -75,7 +75,7 @@
 
   </header>
 
-  <div class="video-background">
+  <section class="video-background">
     <video autoplay muted loop playsinline>
       <source src="img/video4.mp4" type="video/mp4">
       Seu navegador não suporta vídeos em HTML5.
@@ -83,6 +83,7 @@
     <div class="content">
 
       <div class="s-hero">
+
         <div class="container">
           <div class="text">
             <div class="lead" data-aos="fade-up" data-aos-duration="1500">
@@ -108,14 +109,15 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="s-solutions">
+  <section class="s-solutions" id="solutions">
+    <h2 class="gradient-text text-center">Nossas Soluções</h2>
+    <h3 class="text-center">
+      Nossos resultados não são por acaso</h3>
     <div class="container">
       <div class="text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-        <h2 class="gradient-text">Nossas Soluções</h2>
-        <h3>
-          Nossos resultados não são por acaso</h3>
+
         <div class="row">
           <div class="col">
             <img src="img/icon-mkt.svg" alt="" />
@@ -166,9 +168,9 @@
 
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="s-letstalk">
+  <section class="s-letstalk" id="about">
     <div class="container">
       <!-- <div class="top">
         <div>
@@ -211,7 +213,108 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <footer>
+    <div class="container color-dark">
+
+      <div class="d-flex">
+
+        <a href="#hero" class="" id="logo">
+
+          <img src="img/logo.png" alt="inovatech" width="250px">
+
+          <p class="footer_description mt-4 text-gray-light">Transformando o futuro com tecnologia</p>
+        </a>
+
+        <div>
+          <h4 class="color-light">Links</h4>
+          <ul>
+            <li><a href="#home">Inovatech Studio</a></li>
+            <li><a href="#solution">Soluções</a></li>
+            <li><a href="#about">Sobre</a> </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="color-light">Contato</h4>
+          <ul>
+            <li>
+              <span>
+                <img src="img/icon-clock.svg" alt="icone relogio">
+              </span>
+
+              <span> Segunda à sexta das 08:00h às 20:00h</span>
+
+            </li>
+            <li>
+              <span>
+                <img src="img/icon-mail.svg" alt="icone email">
+              </span>
+              <a href="mailto:">inovatech@gmail.com</a>
+
+            </li>
+
+            <li> <span>
+                <img src="img/icon-whats.svg" alt="icone whatsapp">
+              </span>
+
+              <a
+                href="https://api.whatsapp.com/send?l=pt_BR&amp;phone=5511948756815&amp;text=Ol%C3%A1%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20a%20consultoria.">Enviar
+                WhatsApp</a>
+
+            </li>
+
+            <li> <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="27"
+                  height="27" viewBox="0 0 24 24" stroke-width="2" stroke="#a1ff14" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                  <path d="M16.5 7.5l0 .01" />
+                </svg>
+              </span>
+
+              <a href="https://www.instagram.com/wagner.paulo89">Instagram</a>
+
+            </li>
+          </ul>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+    <div class="credits">
+      <a href="#hero" class="btn-top" aria-label="Botão para subir para o topo do site">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-arrow-narrow-up" width="24" height="24"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#c2f13c" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 5l0 14" />
+          <path d="M16 9l-4 -4" />
+          <path d="M8 9l4 -4" />
+        </svg></a>
+      <p class="d-center color-light text-center">Voltar ao topo</p>
+
+
+      <div class="container wps-games">
+        <div><b> © Wagner Silva 2024.</b> All rights reserved. </div>
+
+
+        <div class="d-flex align-center">
+          Desenvolvido por: <a href="https://wpsgames.com.br"><img src="https://wpsgames.com.br/assets/ico-crow.svg"
+              alt="wps games" width="30px"></a>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </footer>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/tilt.jquery.js"></script>

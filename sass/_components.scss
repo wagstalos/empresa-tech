@@ -14,8 +14,16 @@
     background-color: #ab48bc;
 }
 
+.d-flex {
+    display: flex;
+}
+
 .text-light {
     color: $white;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .btn-grad {
@@ -38,11 +46,11 @@
 }
 
 .element-3d {
-    width: 38vw;
+    width: 40vw;
     height: 609px;
     // position: absolute;
     top: 150px;
-    right: -98px;
+    margin-right: 0;
     z-index: 20;
 
     @include responsive(600px) {

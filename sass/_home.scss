@@ -163,10 +163,11 @@
     background-color: $white;
     background: rgb(0, 0, 0);
     background: linear-gradient(129deg, rgba(0, 0, 0, 1) 66%, rgb(7 34 113) 99%);
-
+    position: relative;
     .container {
         display: flex;
         justify-content: space-between;
+        // max-width: 184.6rem;
     }
     h2,
     h3,

@@ -18,24 +18,34 @@
     color: $white;
 }
 
-
-         
 .btn-grad {
-    background-image: linear-gradient(to right, #6484ef 0%, #eb09f3  51%, #4568DC  100%);
+    background-image: linear-gradient(to right, #6484ef 0%, #eb09f3 51%, #4568dc 100%);
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
 
     // transition: all 0.5s ease;
     background-size: 200% auto;
-    color: white;            
+    color: white;
     // box-shadow: 0 0 20px #2e2e2e;
     border-radius: 10px;
     display: block;
-  }
+}
 
-  .btn-grad:hover {
+.btn-grad:hover {
     background-position: right center; /* change the direction of the change here */
     text-decoration: none;
-  }
- 
+}
+
+.element-3d {
+    width: 30vw;
+    height: 500px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    z-index: 20;
+
+    @include responsive(600px) {
+        width: 50vw;
+    }
+}

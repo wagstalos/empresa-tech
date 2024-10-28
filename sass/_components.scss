@@ -58,6 +58,7 @@
 
     @include responsive(600px) {
         width: 90vw;
+        background-color: #000000;
     }
 }
 
@@ -92,7 +93,7 @@
         height: 50px;
         margin: 40px auto 0; /* Centraliza horizontalmente e define margem superior */
         border: 1px solid $white;
-        width:280px;
+        width: 280px;
         color: $white;
         font-size: 1.6rem;
 

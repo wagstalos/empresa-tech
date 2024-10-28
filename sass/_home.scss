@@ -156,7 +156,7 @@
     }
 }
 
-.s-card-c6 {
+.s-solutions {
     padding-top: 9.6rem;
     padding-bottom: 8.1rem;
     background-color: #0f0f2d;
@@ -164,10 +164,15 @@
     background: rgb(0, 0, 0);
     background: linear-gradient(129deg, rgba(0, 0, 0, 1) 66%, rgb(7 34 113) 99%);
     position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/50.jpg");
+    background-position: center;
+    background-size: cover;
+
     .container {
         display: flex;
         justify-content: space-between;
         // max-width: 184.6rem;
+        align-items: end;
     }
     h2,
     h3,
@@ -189,7 +194,7 @@
         line-height: 130%;
     }
     .text {
-        width: 100%;
+        width: 50%;
         max-width: 68.4rem;
         h4 {
             // max-width: 22.7rem;
@@ -224,6 +229,7 @@
         }
     }
     .area-image {
+        width: 50%;
         img {
             // margin-top: -165px;
             position: relative;
@@ -258,19 +264,23 @@
     }
 
     @include responsive(800px) {
-        .area-image img {
-            display: none;
+        .text {
+            width: 100%;
+        }
+        .area-image {
+            width: 100%;
         }
     }
 }
 
-.s-banco-c6 {
+.s-letstalk {
     background: #242424;
     padding-bottom: 13.4rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/40.jpg");
     background-size: cover;
     .container {
         padding-top: 10.9rem;
+
         .top {
             display: flex;
             justify-content: space-between;

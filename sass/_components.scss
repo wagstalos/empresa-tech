@@ -38,14 +38,14 @@
 }
 
 .element-3d {
-    width: 30vw;
-    height: 500px;
-    position: absolute;
+    width: 38vw;
+    height: 609px;
+    // position: absolute;
     top: 150px;
-    right: 0;
+    right: -98px;
     z-index: 20;
 
     @include responsive(600px) {
-        width: 50vw;
+        width: 100vw;
     }
 }

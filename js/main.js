@@ -48,8 +48,6 @@ $(document).ready(function () {
 //     engine.resize();
 // });
 
-
-
 const canvas = document.getElementById("renderCanvas");
 
 // Cria o motor Babylon com fundo transparente
@@ -85,7 +83,7 @@ const createScene = () => {
   BABYLON.SceneLoader.ImportMesh(
     "",
     "img/",
-    "DragonFly.glb",
+    "CamaroSS.glb",
     scene,
     function (meshes, particleSystems, skeletons) {
       meshes.forEach((mesh) => {
@@ -100,11 +98,17 @@ const createScene = () => {
         const animationSpeedFactor = 0.2; // 0.2 para 20% da velocidade original
 
         // Acessa as animações do esqueleto
-        skeleton.animations.forEach(animation => {
+        skeleton.animations.forEach((animation) => {
           // Modifica a velocidade da animação
           animation.speed = animationSpeedFactor;
           // Inicia a animação
-          scene.beginAnimation(skeleton, 0, animation.to, true, animationSpeedFactor);
+          scene.beginAnimation(
+            skeleton,
+            0,
+            animation.to,
+            true,
+            animationSpeedFactor
+          );
         });
       }
     }

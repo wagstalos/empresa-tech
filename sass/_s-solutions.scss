@@ -76,6 +76,13 @@
     }
 
     @include responsive(800px) {
+        h2 {
+            font-size: 3rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+            color: $white;
+        }
         .container {
             flex-direction: column;
             text-align: center;
@@ -84,6 +91,7 @@
             margin-top: -50px;
         }
         .text {
+            width: 100%;
             .row {
                 width: 100%;
                 justify-content: center;
@@ -98,12 +106,6 @@
             .underline {
                 margin: 0 auto;
             }
-        }
-    }
-
-    @include responsive(800px) {
-        .text {
-            width: 100%;
         }
         .area-image {
             width: 100%;

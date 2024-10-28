@@ -124,5 +124,11 @@ footer {
             z-index: 11;
             background-color: $green;
         }
+        .align-center {
+            a {
+                margin: 0 auto;
+                margin-top: 8px;
+            }
+        }
     }
 }

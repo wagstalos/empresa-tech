@@ -1,12 +1,12 @@
 footer {
     background-color: $white;
     color: #c6c5ce;
-    border-top: 2px solid #ecf2fb;
+    border-top: 1px solid #262626;
     padding-top: 8rem;
     font-size: 2rem;
     font-size: 1.4rem;
     line-height: 165%;
-    background: radial-gradient(circle at 50% 72%, #000000 0, #1a1a1a 55%);
+    background: linear-gradient(129deg, rgba(0, 0, 0, 1) 66%, rgb(7 34 113) 99%);
     z-index: 1;
     position: relative;
 
@@ -58,19 +58,18 @@ footer {
     }
 
     .credits {
-        border-top: 1px solid #272727;
+        border-top: 1px solid #17171748;
         padding: 3rem 0;
         margin-top: $gutter * 8;
         position: relative;
-        background: radial-gradient(circle at 50% 72%, #000000 0, #1a1a1a 55%);
-        background-color: #170027;
-
+        background-color: #000000;
+        background: linear-gradient(129deg, rgba(0, 0, 0, 1) 60%, rgb(0, 12, 46) 99%);
         .btn-top {
             position: absolute;
             top: -18px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: $black;
+            background-color: #000;
             border-radius: 80px;
             width: 34px;
             height: 34px;
